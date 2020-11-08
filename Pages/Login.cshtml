@@ -4,29 +4,35 @@
 }
 
 <!--Need to add: validate page, forgot password page-->
+<body style="background: linear-gradient(180deg, rgba(2,0,36,1) 15%, rgba(23,34,144,1) 70%, rgba(64,29,167,1) 88%, rgba(91,26,182,1) 100%);">
+    <div class = "jumbotron">
+        <div class="text-center">
+            <h1 class="display-4">Welcome, Returning User</h1>
 
-<div class="text-center">
-    <h1 class="display-4">Welcome, Returning User</h1>
+            <p>New User? <a asp-page ="/SignUp"> Register here</a>.</p>
 
-    <p>New User? <a asp-page ="/SignUp"> Register here</a>.</p>
-
-</div>
-
-<form action ="/validate" method="get">
-    <div class="container">
-        <label for="username">Username</label>
-        <br />
-        <input type="text" placeholder="Enter Username" name="username" required>
-        <br />
-       
-        <br />
-        <label for="password">Password</label>
-        <br />
-        <input type="text" placeholder="Enter Password" name="password" required>
-        <p><a asp-page ="/ResetPassword">Forgot Password?</a></p>
-
-        <button type ="submit">Login</button>
-    
+        </div>
     </div>
 
-</form>
+    <div class="jumbotron">
+        <div class = "text-center">
+            <form action ="/validate" method="get">
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <br />
+                        <input type="text" placeholder="Enter Username" name="username" required>
+                    <br />
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <br />
+                        <input type="text" placeholder="Enter Password" name="password" required>
+                    <p><a asp-page ="/ResetPassword">Forgot Password?</a></p>
+                </div>
+                <button type="submit" class="btn btn-primary">Log In</button>
+
+            </form>
+        </div>
+    </div>
+</body>

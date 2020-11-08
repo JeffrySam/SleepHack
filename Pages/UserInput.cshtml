@@ -4,51 +4,56 @@
 @{
     ViewData["Title"] = "Create";
 }
+<body style="background: linear-gradient(180deg, rgba(2,0,36,1) 15%, rgba(23,34,144,1) 70%, rgba(64,29,167,1) 88%, rgba(91,26,182,1) 100%);">
+    <div class = "jumbotron">
+        <div class="text-center">
+            <h1>User Info</h1>
 
-<h1>User Info</h1>
+            <h4>Please enter the following information to complete registration</h4>
 
-<h4>Please enter the following information to complete registration</h4>
-
-<div class="container-fluid">
-    <div class="row">
-        <div class="col-sm-2 sidenav">
-        </div>
-        <div class="col-sm-10 text-left">
-     
-            <br />
-            <br />
-            <div class="row text-left">
-                <div class="col-lg-12">
-                    <form id="PerInfo" class="form-horizontal" runat="server">
-                        <div class="row mainbody">
-                            <div class="col-lg-4">
-                                <div class="form-group">
-                                    <label for="Fullname">Full Name *</label>
-                                    <input id="fname" type="text" class="form-control" required="required" placeholder="Enter Full Name" name="fname" maxlength="50" />
-                                </div>
-                                <div class="form-group">
-                                    <label for="Age">Age *</label>
-                                    <input id="Age" type="text" class="form-control" required="required" placeholder="Enter Age" name="Age1" maxlength="3" />
-                                </div>
-                                <div class="form-group">
-                                    <label for="Height">Height(in)</label>
-                                    <input id="Hei" type="text" class="form-control" placeholder="Enter Height in Inches" name="Hei2" maxlength="3" />
-                                </div>
-                                <div class="form-group">
-                                    <label for="Weight">Weight(lb) *</label>
-                                    <input id="Wei" type="text" class="form-control" required="required" placeholder="Enter Weight in pounds" name="Wei2" maxlength="4" />
-                                </div>
-                                <div class="form-group">
-                                    <label for="hrs">How many hrs do sleep do you get?</label>
-                                    <input id="hrs" type="text" class="form-control" required="required" placeholder="Enter number of hours" name="hrs2" maxlength="4" />
-                                </div>
-                                <input type="submit" value="Complete Registration" class="btn btn-primary" />
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-2 sidenav">
+                    </div>
+                    <div class="col-sm-10 text-left">
+                
+                        <br />
+                        <br />
+                        <div class="row text-left">
+                            <div class="col-lg-12">
+                                <form id="PerInfo" class="form-horizontal" runat="server">
+                                    <div class="row mainbody">
+                                        <div class="col-lg-4">
+                                            <div class="form-group">
+                                                <label for="Fullname">Full Name *</label>
+                                                <input id="fname" type="text" class="form-control" required="required" placeholder="Enter Full Name" name="fname" maxlength="50" />
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="Age">Age *</label>
+                                                <input id="Age" type="text" class="form-control" required="required" placeholder="Enter Age" name="Age1" maxlength="3" />
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="Height">Height(in)</label>
+                                                <input id="Hei" type="text" class="form-control" placeholder="Enter Height in Inches" name="Hei2" maxlength="3" />
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="Weight">Weight(lb) *</label>
+                                                <input id="Wei" type="text" class="form-control" required="required" placeholder="Enter Weight in pounds" name="Wei2" maxlength="4" />
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="hrs">How many hrs do sleep do you get?</label>
+                                                <input id="hrs" type="text" class="form-control" required="required" placeholder="Enter number of hours" name="hrs2" maxlength="4" />
+                                            </div>
+                                            <input type="submit" value="Complete Registration" class="btn btn-primary" />
+                                        </div>
+                                    </div>
+                                </form>
                             </div>
                         </div>
-                    </form>
+                    </div>
+                    <div class="col-sm-2 sidenav"></div>
                 </div>
             </div>
         </div>
-        <div class="col-sm-2 sidenav"></div>
     </div>
-</div>
+</body>
