@@ -35,6 +35,8 @@ namespace SleepHack.Pages
                 return Page();
             }
 
+            TimeSpan ts = wake - sleep;
+
             return RedirectToPage("/Index");
             
         }

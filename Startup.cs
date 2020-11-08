@@ -8,6 +8,8 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Microsoft.Extensions.Azure;
+using Microsoft.EntityFrameworkCore;
 
 namespace SleepHack
 {
@@ -24,6 +26,9 @@ namespace SleepHack
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddRazorPages();
+
+            services.AddDbContext<SleepHackContext>(options =>
+      options.UseSqlServer(Configuration.GetConnectionString("RazorPagesMovieContext")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -39,6 +44,8 @@ namespace SleepHack
                 // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
             }
+
+
 
             app.UseHttpsRedirection();
             app.UseStaticFiles();
