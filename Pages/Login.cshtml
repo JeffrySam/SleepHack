@@ -1,0 +1,32 @@
+﻿@page
+@model SleepHack.Pages.User.LoginModel
+@{
+}
+
+<!--Need to add: validate page, forgot password page-->
+
+<div class="text-center">
+    <h1 class="display-4">Welcome, Returning User</h1>
+
+    <p>New User? <a asp-page ="/SignUp"> Register here</a>.</p>
+
+</div>
+
+<form action ="/validate" method="get">
+    <div class="container">
+        <label for="username">Username</label>
+        <br />
+        <input type="text" placeholder="Enter Username" name="username" required>
+        <br />
+       
+        <br />
+        <label for="password">Password</label>
+        <br />
+        <input type="text" placeholder="Enter Password" name="password" required>
+        <p><a asp-page ="/ResetPassword">Forgot Password?</a></p>
+
+        <button type ="submit">Login</button>
+    
+    </div>
+
+</form>
