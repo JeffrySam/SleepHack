@@ -1,5 +1,5 @@
 ﻿@page
-@model SleepHack.Pages.User.LoginModel
+@model SleepHack.Pages.LoginModel
 @{
 }
 
@@ -9,23 +9,23 @@
         <div class="text-center">
             <h1 class="display-4">Welcome, Returning User</h1>
 
-            <p>New User? <a asp-page ="/SignUp"> Register here</a>.</p>
+            <p>New User? <a asp-page ="/UserInput"> Register here</a>.</p>
 
         </div>
     </div>
 
     <div class="jumbotron">
         <div class = "text-center">
-            <form action ="/validate" method="get">
+            <form action ="info.php" method="get">
                 <div class="form-group">
-                    <label for="username">Username</label>
+                    <label for="Username">Username</label>
                     <br />
                         <input type="text" placeholder="Enter Username" name="username" required>
                     <br />
                 </div>
 
                 <div class="form-group">
-                    <label for="password">Password</label>
+                    <label for="Password">Password</label>
                     <br />
                         <input type="text" placeholder="Enter Password" name="password" required>
                     <p><a asp-page ="/ResetPassword">Forgot Password?</a></p>
