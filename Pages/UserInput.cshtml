@@ -1,0 +1,56 @@
+﻿@page
+@model SleepHack.Pages.UserInputModel
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>User Info</h1>
+
+<h4>Please enter the following information to complete registration</h4>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-2 sidenav">
+        </div>
+        <div class="col-sm-10 text-left">
+            <div class="row text-left">
+                <div class="col-lg-12">
+                    <form id="PerInfo" class="form-horizontal" runat="server">
+                        <div class="row mainbody">
+                            <div class="col-lg-4">
+                                <div class="form-group">
+                                    <label for="Fullname">Full Name *</label>
+                                    <input id="fname" type="text" class="form-control" required="required" placeholder="Enter Full Name" name="fname" maxlength="50" />
+                                </div>
+                                <div class="form-group">
+                                    <label for="Username">Username </label>
+                                    <input id="uname" type="text" class="form-control" required="required" placeholder="Enter a Username" name="uname" maxlength="50" />
+                                </div>
+                                <div class="form-group">
+                                    <label for="Pass">Password</label>
+                                    <input id="pw" type="text" class="form-control" required="required" placeholder="Enter a password" name="pw" maxlength="50" />
+                                </div>
+                                <div class="form-group">
+                                    <label for="Age">Age *</label>
+                                    <input id="Age" type="text" class="form-control" required="required" placeholder="Enter Age" name="Age1" maxlength="3" />
+                                </div>
+                                <div class="form-group">
+                                    <label for="Height">Height(in)</label>
+                                    <input id="Hei" type="text" class="form-control" placeholder="Enter Height in Inches" name="Hei2" maxlength="3" />
+                                </div>
+                                <div class="form-group">
+                                    <label for="Weight">Weight(lb) *</label>
+                                    <input id="Wei" type="text" class="form-control" required="required" placeholder="Enter Weight in pounds" name="Wei2" maxlength="4" />
+                                </div>
+
+                                <input type="submit" value="Complete Registration" class="btn btn-primary" />
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-2 sidenav"></div>
+    </div>
+</div>

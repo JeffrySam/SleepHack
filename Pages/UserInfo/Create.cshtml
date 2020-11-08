@@ -1,0 +1,54 @@
+﻿@page
+@model SleepHack.Pages.UserInfo.CreateModel
+
+@{
+    ViewData["Title"] = "User Info";
+}
+
+<h1>User Info</h1>
+
+<h4>Please enter the following information to complete registration</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Sleep.Name" class="control-label"></label>
+                <input asp-for="Sleep.Name" class="form-control" />
+                <span asp-validation-for="Sleep.Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Sleep.Age" class="control-label"></label>
+                <input asp-for="Sleep.Age" class="form-control" />
+                <span asp-validation-for="Sleep.Age" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Sleep.Height" class="control-label"></label>
+                <input asp-for="Sleep.Height" class="form-control" />
+                <span asp-validation-for="Sleep.Height" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Sleep.Weight" class="control-label"></label>
+                <input asp-for="Sleep.Weight" class="form-control" />
+                <span asp-validation-for="Sleep.Weight" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Sleep.SleepAvg" class="control-label"></label>
+                <input asp-for="Sleep.SleepAvg" class="form-control" />
+                <span asp-validation-for="Sleep.SleepAvg" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
