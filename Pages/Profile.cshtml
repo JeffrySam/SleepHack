@@ -1,0 +1,53 @@
+﻿@page
+@model SleepHack.Pages.ProfileModel
+@{
+}
+
+<div class="container-fluid text-center frontpart">
+    <div class="row">
+        <div class="col-sm-2 sidenav"></div>
+        <div class="col-sm-8 text-center">
+            <div class="row text-left">
+                <div class="col-sm-12">
+                    <br />
+                    <br />
+                    <asp:Label ID="welcome" Font-Size="XX-Large" runat="server" Text="Welcome!"></asp:Label>
+                </div>
+            </div>
+   
+            <div class="container-fluid" style="border-style:groove;">
+                <div class="row text-center">
+                    <div class="col-sm-12 text-center">
+                        <h3>Profile Information</h3>
+                        <hr />
+                    </div>
+                </div>
+                <br />
+                <div class="row text-center">
+                    <div class="col-sm-4 text-center">
+                        <h4>Name: </h4>
+                        <asp:Label ID="Add1" Text="NA" runat="server"></asp:Label>
+                    </div>
+                    <div class="col-sm-offset-4 text-center">
+                        <h4>Age: </h4>
+                        <asp:Label ID="cit" Text="NA" runat="server"></asp:Label>
+                    </div>
+                </div>
+                <br />
+                <div class="row text-center">
+                    <div class="col-sm-4 text-center">
+                        <h4>Height(in): </h4>
+                        <asp:Label ID="Add2" Text="" runat="server"></asp:Label>
+                    </div>
+                    <div class="col-sm-offset-4 text-center">
+                        <h4>Weight(lb): </h4>
+                        <asp:Label ID="ste" Text="NA" runat="server"></asp:Label>
+                    </div>
+                </div>
+                <br />
+                <br />
+            </div>
+        </div>
+        <div class="col-sm-2 sidenav"></div>
+    </div>
+</div>
